@@ -1,5 +1,5 @@
 {% set name = "mutmut" %}
-{% set version = "2.2.0" %}
+{% set version = "2.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d78bb3324a4da736c31c9fb19c197290ededaca76c8eac2c2e40e70b59f38720
+  sha256: 5ab05ffc04ed98c98d5da982a6d425875db5ca59cb7835ef55d1d694aea7d2f2
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - mutmut = mutmut.__main__:climain
 
@@ -40,7 +40,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'mutmut - python mutation tester'
+  summary: mutmut - python mutation tester
   description: |
     Mutmut is a mutation testing system for Python,
     with a strong focus on ease of use.
