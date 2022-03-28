@@ -26,6 +26,7 @@ requirements:
     - parso
     - click
     - pony
+    - toml
     - junit-xml ==1.8
 
 test:
