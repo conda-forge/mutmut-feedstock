@@ -1,11 +1,11 @@
-About mutmut
-============
+About mutmut-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mutmut-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/boxed/mutmut
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mutmut-feedstock/blob/main/LICENSE.txt)
 
 Summary: mutmut - python mutation tester
 
