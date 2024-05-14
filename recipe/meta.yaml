@@ -27,7 +27,7 @@ requirements:
     - click
     - pony
     - toml
-    - junit-xml ==1.8
+    - junit-xml >=1.8,<2
 
 test:
   requires:
