@@ -1,5 +1,5 @@
 {% set name = "mutmut" %}
-{% set version = "2.5.1" %}
+{% set version = "3.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d8fea2538805277f6290922e88881ad045002fc284d5a53c2b3915298b77f79d
+  sha256: 958acede0c99de902dc3c55ef7c4c025eeb70cef44f59e932f9f0f47b310ec61
 
 build:
   noarch: python
