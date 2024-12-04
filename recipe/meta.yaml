@@ -14,7 +14,7 @@ build:
   number: 0
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
-    - mutmut = mutmut.__main__:climain
+    - mutmut = mutmut.__main__:cli
 
 requirements:
   host:
