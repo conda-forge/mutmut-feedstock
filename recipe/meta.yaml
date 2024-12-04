@@ -23,12 +23,12 @@ requirements:
     - setuptools
   run:
     - python >=3.7
-    - glob2
     - parso
     - click
-    - pony
-    - toml
-    - junit-xml >=1.8,<2
+    - textual
+    - setproctitle
+    - toml >=0.10.2
+    - junit-xml =1.8
 
 test:
   requires:
