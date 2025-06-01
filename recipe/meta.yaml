@@ -23,12 +23,10 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
-    - parso
+    - libcst >=1.7.0,<2.0.0
     - click
     - textual
     - setproctitle
-    - toml >=0.10.2
-    - junit-xml =1.8
 
 test:
   requires:
