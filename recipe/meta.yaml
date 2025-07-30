@@ -1,5 +1,5 @@
 {% set name = "mutmut" %}
-{% set version = "3.2.3" %}
+{% set version = "3.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d45b3460ce72b4657f7ee11ed4f479deddb7bdb0052863b6feb809f596eb0b5c
+  sha256: 6aabc3a8f2b6c8eafe7054e1f7348e68aba807dcf12bffb6bfa00e5046d8a6bd
 
 build:
   noarch: python
@@ -23,12 +23,12 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
-    - parso
+    - libcst 1.7*
     - click
     - textual
     - setproctitle
     - toml >=0.10.2
-    - junit-xml =1.8
+    - pytest
 
 test:
   requires:
