@@ -16,7 +16,6 @@ Documentation: https://mutmut.readthedocs.io/
 Mutmut is a mutation testing system for Python,
 with a strong focus on ease of use.
 
-
 Current build status
 ====================
 
