@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: mutmut
-  version: 3.3.1
+  version: "3.4.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 6aabc3a8f2b6c8eafe7054e1f7348e68aba807dcf12bffb6bfa00e5046d8a6bd
+  sha256: b3b47e60828192c9f2e7737316469777f769a9163d0e384776129b80f7e8aa3e
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv
   python:
