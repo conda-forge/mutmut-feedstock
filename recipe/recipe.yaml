@@ -24,15 +24,15 @@ requirements:
   host:
     - python ${{ python_min }}.*
     - pip
-    - setuptools
+    - uv-build
   run:
     - python >=${{ python_min }}
-    - libcst 1.7*
-    - click
-    - textual
-    - setproctitle
-    - toml >=0.10.2
-    - pytest
+    - coverage >=7.3.0
+    - libcst >=1.8.5
+    - click >=8.0.0
+    - textual >=1.0.0
+    - setproctitle >=1.0.0
+    - pytest >=6.2.5
 
 tests:
   - requirements:
