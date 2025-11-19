@@ -33,6 +33,7 @@ requirements:
     - textual >=1.0.0
     - setproctitle >=1.0.0
     - pytest >=6.2.5
+    - toml >=0.10.2
 
 tests:
   - requirements:
