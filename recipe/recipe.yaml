@@ -27,12 +27,12 @@ requirements:
     - uv-build
   run:
     - python >=${{ python_min }}
+    - click >=8.0.0
     - coverage >=7.3.0
     - libcst >=1.8.5
-    - click >=8.0.0
-    - textual >=1.0.0
-    - setproctitle >=1.0.0
     - pytest >=6.2.5
+    - setproctitle >=1.1.0
+    - textual >=1.0.0
     - toml >=0.10.2
 
 tests:
