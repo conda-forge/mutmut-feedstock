@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: mutmut
-  version: "3.5.0"
+  version: "3.6.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 548186d4b0c494b7b9895db82871cb1f229b9271c9ff7cd633e348dd9afcc772
+  sha256: bcbd3e4d0d2d4edf3dfb42955417279a8866a3dbbcb87d619f2f3fd0ac7fafda
 
 build:
   number: 0
@@ -27,12 +27,12 @@ requirements:
     - uv-build
   run:
     - python >=${{ python_min }}
+    - click >=8.0.0
     - coverage >=7.3.0
     - libcst >=1.8.5
-    - click >=8.0.0
-    - textual >=1.0.0
-    - setproctitle >=1.0.0
     - pytest >=6.2.5
+    - setproctitle >=1.1.0
+    - textual >=1.0.0
     - toml >=0.10.2
 
 tests:
