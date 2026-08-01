@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: mutmut
-  version: "3.5.0"
+  version: "3.7.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 548186d4b0c494b7b9895db82871cb1f229b9271c9ff7cd633e348dd9afcc772
+  sha256: dc93260fabb3a6fd3693aa8d1746825885cb6f9e66c7f9cc1a0f34fc6388e14a
 
 build:
   number: 0
