@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: mutmut
-  version: "3.5.0"
+  version: "3.8.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,12 +10,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
-  sha256: 548186d4b0c494b7b9895db82871cb1f229b9271c9ff7cd633e348dd9afcc772
+  sha256: bc670276518f893ab356f1d28826c49b7e606e7cf89c300e3888c0b52fc1d2ed
 
 build:
   number: 0
   noarch: python
-  script: ${{ PYTHON }} -m pip install . -vv
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   python:
     entry_points:
       - mutmut = mutmut.__main__:cli
@@ -36,13 +36,13 @@ requirements:
     - toml >=0.10.2
 
 tests:
-  - requirements:
-      run:
-        - pip
-        - python ${{ python_min }}.*
-    script:
-      - pip check
-      - mutmut --help
+  - python:
+      imports:
+        - mutmut
+      pip_check: true
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   license: BSD-3-Clause
